@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -e
+#set -e
 
 root_file="$1"
 working_directory="$2"
@@ -21,3 +21,4 @@ if [ -n "$working_directory" ]; then
 fi
 
 "$compiler" $args "$root_file"
+exit 0
